@@ -1,0 +1,43 @@
+
+.gradient::after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(transparent, white);
+  pointer-events: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 20px;
+  padding-bottom: 0;
+  position: relative;
+
+  textarea { 
+    width: 100%; 
+    line-height: 20px; 
+    border: none;
+    outline: none;
+    resize: none;
+    transition: height 1s;
+  }
+
+  button {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 0;
+    border: 1px solid blue;
+    color: blue;
+    background: white;
+    position: relative;
+    z-index: 2;
+  }
+}
